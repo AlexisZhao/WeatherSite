@@ -19,7 +19,7 @@ function getHTTP(link, callback)
       {
         alert('bad data');
         document.getElementById('myForm').reset();
-        console.log('bad data');
+        //console.log('bad data');
         return false;
       }
     }
@@ -45,7 +45,7 @@ function writeData(myData)
 function getUrl(city)
 {
   var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=98c76973fbe50e9dc568489cb21f7d21";
-  console.log("1.define url");
+  //console.log("1.define url");
   getHTTP(url, writeData);
 }
 
